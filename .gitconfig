@@ -1,0 +1,45 @@
+[core]
+    autocrlf = true
+    fscache = true
+    symlinks = false
+    ignorecase = false
+    autocrlf = true
+    repositoryformatversion = 0
+    filemode = false
+    bare = false
+    logallrefupdates = true
+    symlinks = false
+[diff "astextplain"]
+    textconv = astextplain
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+[pull]
+    rebase = true
+[push]
+    default = simple
+    autoSetupRemote = true
+[rebase]
+    autoStash = true
+[init]
+    defaultbranch = main
+[commit]
+    gpgsign = true
+[remote]
+    pushDefault = origin
+[remote "origin"]
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    url = git@cluehub_github:adzr/ide.nvim.git
+[branch "main"]
+    remote = origin
+[http]
+    sslbackend = openssl
+[credential]
+    helper = manager
+[alias]
+    lg = log --graph --pretty=format:'%Cred%H%Creset %Cgreen(%ci)%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset'
+[color "diff"]
+    old = red
+    new = green

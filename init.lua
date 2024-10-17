@@ -29,6 +29,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- This has to be set before initializing lazy
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- Initialize lazy with dynamic loading of anything in the plugins directory
 
@@ -39,7 +40,8 @@ require("lazy").setup("plugins", {
   },
   ui = require("core.nerdfont-fallback")
 })
+
 -- These modules are not loaded by lazy
 require("core.options")
+require("core.keymaps")
 require("core.health")
---require("core.keymaps")

@@ -46,7 +46,7 @@ vim.diagnostic.config {
 opt.cmdheight = 2
 opt.conceallevel = 0
 opt.pumheight = 10
-opt.showtabline = 2
+opt.showtabline = 0
 opt.signcolumn = "yes"
 opt.wrap = true
 opt.linebreak = true

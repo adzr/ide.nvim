@@ -62,14 +62,11 @@ return {
     -- For more themes, see https://github.com/nvim-lualine/lualine.nvim/blob/master/THEMES.md
     -- theme = "codedark", -- "auto, tokyonight, catppuccin, codedark, nord"
     icons_enabled = true,
-    theme = "auto",
+    theme = "tokyonight-night",
     component_separators = { left = "", right = "" },
     section_separators = { left = "", right = "" },
     disabled_filetypes = {
-      "alpha",
-      "dashboard",
-      "NvimTree",
-      "Outline"
+      'NvimTree',
     },
     ignore_focus = true,
     always_divide_middle = true,

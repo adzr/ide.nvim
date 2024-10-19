@@ -24,6 +24,10 @@ keymap("n", "<AS-Left>", "<C-w>h", opts)
 keymap("n", "<AS-Down>", "<C-w>j", opts)
 keymap("n", "<AS-Up>", "<C-w>k", opts)
 keymap("n", "<AS-Right>", "<C-w>l", opts)
+keymap("n", "<A-Left>", "<C-o>", opts)
+keymap("n", "<A-Right>", "<C-i>", opts)
+
+
 
 -- Resize with arrows
 keymap("n", "<CS-Up>", ":resize -2<CR>", opts)

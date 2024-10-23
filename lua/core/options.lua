@@ -10,6 +10,7 @@ opt.swapfile = false
 opt.timeoutlen = 300
 opt.undofile = true
 opt.writebackup = false
+opt.spell = false
 
 -- Line Numbers
 opt.number = true
@@ -26,7 +27,7 @@ opt.smartindent = true
 opt.breakindent = true
 
 -- Line Wrapping
-opt.wrap = false
+opt.wrap = true -- Wrap text
 
 -- Search Settings
 opt.ignorecase = true
@@ -40,9 +41,9 @@ opt.cursorline = true
 opt.termguicolors = true
 opt.background = "dark"
 opt.signcolumn = "yes"
-vim.diagnostic.config {
-  float = { border = "rounded" }, -- add border to diagnostic popups
-}
+vim.diagnostic.config({
+	float = { border = "rounded" }, -- add border to diagnostic popups
+})
 opt.cmdheight = 2
 opt.conceallevel = 0
 opt.pumheight = 10
@@ -54,7 +55,7 @@ opt.scrolloff = 8
 opt.sidescrolloff = 8
 opt.showmode = false
 opt.list = true
-opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 -- Backspace
 opt.backspace = "indent,eol,start"
@@ -65,9 +66,8 @@ opt.backspace = "indent,eol,start"
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
 vim.schedule(function()
-  vim.opt.clipboard = 'unnamedplus'
+	vim.opt.clipboard = "unnamedplus"
 end)
-
 
 -- Split Windows
 opt.splitright = true
@@ -87,4 +87,4 @@ opt.foldexpr = "nvim_treesitter#foldexpr()" -- Utilize Treesitter folds
 -- Cmp
 opt.completeopt = { "menuone", "noselect" }
 opt.updatetime = 250
-opt.inccommand = 'split'
+opt.inccommand = "split"

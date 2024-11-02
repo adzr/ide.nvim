@@ -1,9 +1,9 @@
 [core]
-    autocrlf = true
+    eol = lf
+    autocrlf = false
     fscache = true
     symlinks = false
     ignorecase = false
-    autocrlf = true
     repositoryformatversion = 0
     filemode = false
     bare = false

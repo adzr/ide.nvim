@@ -11,12 +11,18 @@ return {
 		local none_ls = require("null-ls")
 		local cspell = require("cspell")
 
+		local cspell_diagnostics = cspell.diagnostics.with({ config = config })
+		local cspell_code_actions = cspell.code_actions.with({ config = config })
+
 		none_ls.setup({
 			sources = {
 				none_ls.builtins.formatting.stylua,
 				none_ls.builtins.completion.spell,
-				cspell.diagnostics.with({ config = config }),
-				cspell.code_actions.with({ config = config }),
+				none_ls.builtins.code_actions.gitrebase,
+				none_ls.builtins.code_actions.gitsigns,
+				none_ls.builtins.code_actions.textlint,
+				cspell_diagnostics,
+				cspell_code_actions,
 			},
 		})
 	end,

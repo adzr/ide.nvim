@@ -47,7 +47,7 @@ return {
 		end
 
 		-- Call setup on each LSP server
-		require("mason-lspconfig").setup_handlers({
+		require("mason-lspconfig").setup({
 			function(server_name)
 				lsp_config[server_name].setup({
 					on_attach = lsp_attach,

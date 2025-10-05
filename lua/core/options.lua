@@ -1,3 +1,4 @@
+--cspell: disable
 local opt = vim.opt
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
@@ -20,7 +21,7 @@ opt.numberwidth = 4
 -- Tabs & Indentation
 opt.tabstop = 2
 opt.shiftwidth = 2
-opt.expandtab = true
+opt.expandtab = false
 opt.autoindent = true
 vim.bo.softtabstop = 2
 opt.smartindent = true
@@ -88,3 +89,5 @@ opt.foldexpr = "nvim_treesitter#foldexpr()" -- Utilize Treesitter folds
 opt.completeopt = { "menuone", "noselect" }
 opt.updatetime = 250
 opt.inccommand = "split"
+
+--cspell: enable

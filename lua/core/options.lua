@@ -90,4 +90,7 @@ opt.completeopt = { "menuone", "noselect" }
 opt.updatetime = 250
 opt.inccommand = "split"
 
+-- Arabic support
+opt.arabicshape = true
+
 --cspell: enable

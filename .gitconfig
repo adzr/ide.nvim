@@ -31,9 +31,10 @@
     pushDefault = origin
 [remote "origin"]
     fetch = +refs/heads/*:refs/remotes/origin/*
-    url = git@cluehub_github:adzr/ide.nvim.git
+    url = git@github.com:adzr/ide.nvim.git
 [branch "main"]
     remote = origin
+	  merge = refs/heads/main
 [http]
     sslbackend = openssl
 [credential]

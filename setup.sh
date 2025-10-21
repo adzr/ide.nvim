@@ -13,5 +13,6 @@ do
     fi
 done
 
+# setup git configurations.
 git config --local include.path ../.gitconfig
 

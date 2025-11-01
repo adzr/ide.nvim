@@ -27,15 +27,16 @@ vim.lsp.config("rust_analyzer", {
 	},
 })
 
-vim.lsp.config("buck2", {
-	cmd = { "buck2 -isolation-dir lsp lsp" },
-	filetypes = { "BUCK", ".buckroot", ".buckconfig", ".buckconfig.*" },
-	root_markers = { ".buckroot", ".git" },
-	settings = {
-		["rust-analyzer"] = {},
-	},
-})
+-- vim.lsp.config("buck2", {
+-- 	cmd = { "buck2 -isolation-dir lsp lsp" },
+-- 	-- filetypes = { "BUCK", ".buckroot", ".buckconfig", ".buckconfig.*" },
+-- 	filetypes = { "*" },
+-- 	root_markers = { ".buckroot", ".git" },
+-- 	settings = {
+-- 		["rust-analyzer"] = {},
+-- 	},
+-- })
 
 vim.lsp.enable("luals")
 vim.lsp.enable("rust_analyzer")
-vim.lsp.enable("buck2")
+-- vim.lsp.enable("buck2")

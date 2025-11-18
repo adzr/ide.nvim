@@ -10,9 +10,9 @@ keymap("", "<Space>", "<Nop>", opts)
 
 -- General keymaps
 
-keymap("n", "<leader>wq", ":wq<CR>")       -- save and quit
-keymap("n", "<leader>qq", ":q!<CR>")       -- quit without saving
-keymap("n", "<leader>ww", ":w<CR>")        -- save
+keymap("n", "<leader>wq", ":wq<CR>") -- save and quit
+keymap("n", "<leader>qq", ":q!<CR>") -- quit without saving
+keymap("n", "<leader>ww", ":w<CR>") -- save
 keymap("n", "gx", ":!open <c-r><c-a><CR>") -- open URL under cursor
 
 -- Better window navigation
@@ -46,42 +46,42 @@ keymap("n", "<A-j>", ":m .+1<CR>==", opts)
 keymap("n", "<A-k>", ":m .-2<CR>==", opts)
 
 -- Split window management
-keymap("n", "<leader>sv", "<C-w>v")     -- split window vertically
-keymap("n", "<leader>sh", "<C-w>s")     -- split window horizontally
-keymap("n", "<leader>se", "<C-w>=")     -- make split windows equal width
+keymap("n", "<leader>sv", "<C-w>v") -- split window vertically
+keymap("n", "<leader>sh", "<C-w>s") -- split window horizontally
+keymap("n", "<leader>se", "<C-w>=") -- make split windows equal width
 keymap("n", "<leader>sx", ":close<CR>") -- close split window
-keymap("n", "<leader>sj", "<C-w>-")     -- make split window height shorter
-keymap("n", "<leader>sk", "<C-w>+")     -- make split windows height taller
-keymap("n", "<leader>sl", "<C-w>>5")    -- make split windows width bigger
-keymap("n", "<leader>sh", "<C-w><5")    -- make split windows width smaller
+keymap("n", "<leader>sj", "<C-w>-") -- make split window height shorter
+keymap("n", "<leader>sk", "<C-w>+") -- make split windows height taller
+keymap("n", "<leader>sl", "<C-w>>5") -- make split windows width bigger
+keymap("n", "<leader>sh", "<C-w><5") -- make split windows width smaller
 
 -- Tab management
-keymap("n", "<leader>to", ":tabnew<CR>")   -- open a new tab
+keymap("n", "<leader>to", ":tabnew<CR>") -- open a new tab
 keymap("n", "<leader>tx", ":tabclose<CR>") -- close a tab
-keymap("n", "<leader>tn", ":tabn<CR>")     -- next tab
-keymap("n", "<leader>tp", ":tabp<CR>")     -- previous tab
+keymap("n", "<leader>tn", ":tabn<CR>") -- next tab
+keymap("n", "<leader>tp", ":tabp<CR>") -- previous tab
 
 -- Diff keymaps
-keymap("n", "<leader>cc", ":diffput<CR>")   -- put diff from current to other during diff
+keymap("n", "<leader>cc", ":diffput<CR>") -- put diff from current to other during diff
 keymap("n", "<leader>cj", ":diffget 1<CR>") -- get diff from left (local) during merge
 keymap("n", "<leader>ck", ":diffget 3<CR>") -- get diff from right (remote) during merge
-keymap("n", "<leader>cn", "]c")             -- next diff hunk
-keymap("n", "<leader>cp", "[c")             -- previous diff hunk
+keymap("n", "<leader>cn", "]c") -- next diff hunk
+keymap("n", "<leader>cp", "[c") -- previous diff hunk
 
 -- Quickfix keymaps
-keymap("n", "<leader>qo", ":copen<CR>")  -- open quickfix list
+keymap("n", "<leader>qo", ":copen<CR>") -- open quickfix list
 keymap("n", "<leader>qf", ":cfirst<CR>") -- jump to first quickfix list item
-keymap("n", "<leader>qn", ":cnext<CR>")  -- jump to next quickfix list item
-keymap("n", "<leader>qp", ":cprev<CR>")  -- jump to prev quickfix list item
-keymap("n", "<leader>ql", ":clast<CR>")  -- jump to last quickfix list item
+keymap("n", "<leader>qn", ":cnext<CR>") -- jump to next quickfix list item
+keymap("n", "<leader>qp", ":cprev<CR>") -- jump to prev quickfix list item
+keymap("n", "<leader>ql", ":clast<CR>") -- jump to last quickfix list item
 keymap("n", "<leader>qc", ":cclose<CR>") -- close quickfix list
 
 -- Vim-maximizer
 keymap("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle maximize tab
 
 -- Nvim-tree
-keymap("n", "<leader>ee", ":NvimTreeToggle<CR>")   -- toggle file explorer
-keymap("n", "<leader>er", ":NvimTreeFocus<CR>")    -- toggle focus to file explorer
+keymap("n", "<leader>ee", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap("n", "<leader>er", ":NvimTreeFocus<CR>") -- toggle focus to file explorer
 keymap("n", "<leader>ef", ":NvimTreeFindFile<CR>") -- find file in file explorer
 
 -- Telescope
@@ -99,36 +99,36 @@ end)
 -- Git-blame
 keymap("n", "<leader>gb", ":GitBlameToggle<CR>") -- toggle git blame
 
--- Harpoon
-keymap("n", "<leader>ha", require("harpoon.mark").add_file)
-keymap("n", "<leader>hh", require("harpoon.ui").toggle_quick_menu)
-keymap("n", "<leader>h1", function()
-	require("harpoon.ui").nav_file(1)
-end)
-keymap("n", "<leader>h2", function()
-	require("harpoon.ui").nav_file(2)
-end)
-keymap("n", "<leader>h3", function()
-	require("harpoon.ui").nav_file(3)
-end)
-keymap("n", "<leader>h4", function()
-	require("harpoon.ui").nav_file(4)
-end)
-keymap("n", "<leader>h5", function()
-	require("harpoon.ui").nav_file(5)
-end)
-keymap("n", "<leader>h6", function()
-	require("harpoon.ui").nav_file(6)
-end)
-keymap("n", "<leader>h7", function()
-	require("harpoon.ui").nav_file(7)
-end)
-keymap("n", "<leader>h8", function()
-	require("harpoon.ui").nav_file(8)
-end)
-keymap("n", "<leader>h9", function()
-	require("harpoon.ui").nav_file(9)
-end)
+-- -- Harpoon
+-- keymap("n", "<leader>ha", require("harpoon.mark").add_file)
+-- keymap("n", "<leader>hh", require("harpoon.ui").toggle_quick_menu)
+-- keymap("n", "<leader>h1", function()
+-- 	require("harpoon.ui").nav_file(1)
+-- end)
+-- keymap("n", "<leader>h2", function()
+-- 	require("harpoon.ui").nav_file(2)
+-- end)
+-- keymap("n", "<leader>h3", function()
+-- 	require("harpoon.ui").nav_file(3)
+-- end)
+-- keymap("n", "<leader>h4", function()
+-- 	require("harpoon.ui").nav_file(4)
+-- end)
+-- keymap("n", "<leader>h5", function()
+-- 	require("harpoon.ui").nav_file(5)
+-- end)
+-- keymap("n", "<leader>h6", function()
+-- 	require("harpoon.ui").nav_file(6)
+-- end)
+-- keymap("n", "<leader>h7", function()
+-- 	require("harpoon.ui").nav_file(7)
+-- end)
+-- keymap("n", "<leader>h8", function()
+-- 	require("harpoon.ui").nav_file(8)
+-- end)
+-- keymap("n", "<leader>h9", function()
+-- 	require("harpoon.ui").nav_file(9)
+-- end)
 
 -- Vim REST Console
 keymap("n", "<leader>xr", ":call VrcQuery()<CR>") -- Run REST query
@@ -142,6 +142,7 @@ keymap("n", "<leader>gt", "<cmd>lua vim.lsp.buf.type_definition()<CR>")
 keymap("n", "<leader>gr", "<cmd>lua vim.lsp.buf.references()<CR>")
 keymap("n", "<leader>gs", "<cmd>lua vim.lsp.buf.signature_help()<CR>")
 keymap("n", "<leader>rr", "<cmd>lua vim.lsp.buf.rename()<CR>")
+keymap("n", "<leader>rs", "<cmd>lua vim.diagnostic.reset()<CR>")
 keymap("n", "<leader>gf", "<cmd>lua vim.lsp.buf.format({async = true})<CR>")
 keymap("v", "<leader>gf", "<cmd>lua vim.lsp.buf.format({async = true})<CR>")
 keymap("n", "<leader>ga", "<cmd>lua vim.lsp.buf.code_action()<CR>")

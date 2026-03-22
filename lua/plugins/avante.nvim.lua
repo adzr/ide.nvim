@@ -20,6 +20,9 @@ return {
 				args = { "acp" },
 			},
 		},
+		selector = {
+			exclude_auto_select = { "NvimTree" },
+		},
 	},
 	dependencies = {
 		"nvim-lua/plenary.nvim",

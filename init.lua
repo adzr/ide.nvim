@@ -1,5 +1,6 @@
 -- Encoding has to be set early on
 vim.opt.fileencoding = "utf-8"
+vim.opt.termbidi = true
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`

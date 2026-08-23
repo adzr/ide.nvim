@@ -208,3 +208,7 @@ keymap("x", "<A-Up>", ":m '<-2<CR>gv=gv", opts)
 
 -- TERMINAL
 keymap("n", "<leader>tt", ":split | term<CR>", { desc = "Toggle float terminal" })
+
+-- D2
+
+keymap("n", "<leader>d2", ":D2Preview", { desc = "Preview a D2 file" })

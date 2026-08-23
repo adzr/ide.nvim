@@ -22,7 +22,8 @@ return {
 		},
 		view = {
 			width = 50,
-		}	},
+		},
+	},
 	config = function(_, opts)
 		-- Recommended settings to disable default netrw file explorer
 		vim.g.loaded_netrw = 1

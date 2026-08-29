@@ -40,11 +40,16 @@ require("lazy").setup("plugins", {
 		notify = false, -- turn off notifications whenever plugin changes are made
 	},
 	ui = require("core.nerdfont-fallback"),
+	performance = {
+		rtp = {
+			reset = false, -- ⚠️ CRUCIAL: Blocks lazy from wiping out Debian's native /usr/lib/ paths!
+		},
+	},
 })
 
 -- These modules are not loaded by lazy
 require("core.filetype")
-require("core.lsp")
+-- require("core.lsp")
 require("core.options")
 require("core.keymaps")
 require("core.health")

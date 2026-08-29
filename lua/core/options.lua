@@ -93,4 +93,9 @@ opt.inccommand = "split"
 -- Arabic support
 opt.arabicshape = true
 
+-- Providers
+vim.g.loaded_node_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0
+
 --cspell: enable

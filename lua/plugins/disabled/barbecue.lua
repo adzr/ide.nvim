@@ -1,6 +1,6 @@
 -- Display LSP-based breadcrumbs
 return {
-	-- https://github.com/utilyre/barbecue.nvim
+	-- ttps://github.com/utilyre/barbecue.nvim
 	-- cspell: disable-next-line.
 	"utilyre/barbecue.nvim",
 	name = "barbecue",

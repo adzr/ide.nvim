@@ -2,16 +2,26 @@ return {
 	"NeogitOrg/neogit",
 	lazy = true,
 	dependencies = {
-		"nvim-lua/plenary.nvim", -- required
-		"sindrets/diffview.nvim", -- optional - Diff integration
-
-		-- Only one of these is needed.
-		"nvim-telescope/telescope.nvim", -- optional
-		--"ibhagwan/fzf-lua", -- optional
-		--"nvim-mini/mini.pick", -- optional
-		--"folke/snacks.nvim", -- optional
+		"esmuellert/codediff.nvim",
+		"m00qek/baleia.nvim",
+		"folke/snacks.nvim",
 	},
 	cmd = "Neogit",
+	config = function()
+		require("neogit").setup({
+			kind = "tab", -- Opens the main dashboard in a clean, focused tab page
+
+			-- 🌟 THE INTEGRATION MATRIX
+			integrations = {
+				diffview = false, -- Explicitly deactivate the old diffview layer
+				codediff = true, -- 🚀 Activate your premium, C-accelerated code comparison engine!
+				snacks = true,
+				mini_pick = false,
+				fzf_lua = false,
+				telescope = false,
+			},
+		})
+	end,
 	keys = {
 		{ "<leader>gg", "<cmd>Neogit<cr>", desc = "Show Neogit UI" },
 	},

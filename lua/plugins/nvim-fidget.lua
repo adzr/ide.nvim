@@ -5,9 +5,6 @@ return {
 	opts = {
 		notification = {
 			override_vim_notify = true,
-			window = {
-				avoid = { "NvimTree" },
-			},
 		},
 	},
 }

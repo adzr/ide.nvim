@@ -9,6 +9,12 @@ return {
 				multilines = {
 					enabled = true,
 				},
+				show_source = {
+          enabled = true,
+        },
+				add_messages = {
+            display_count = true,
+        },
 				virt_texts = {
 					priority = 50000,
 				},
@@ -19,3 +25,4 @@ return {
 		}) -- Disable Neovim's default virtual text diagnostics
 	end,
 }
+

@@ -47,5 +47,5 @@
 -- })
 
 -- vim.lsp.enable("luals")
-vim.lsp.enable("rust_analyzer")
+-- vim.lsp.enable("rust_analyzer")
 -- vim.lsp.enable("buck2")

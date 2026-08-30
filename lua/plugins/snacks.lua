@@ -7,10 +7,25 @@ return {
 			-- 🚀 THE MINIMUM HIGH-PERFORMANCE PLUGINS
 			bigfile = { enabled = true }, -- Protects memory buffer scaling
 			explorer = { enabled = true }, -- Your native file tree sidebar
-			picker = { enabled = true }, -- Ultra-fast fuzzy finder (rg/fd)
+			picker = {
+				enabled = true,
+				sources = {
+					explorer = {
+						win = {
+							list = {
+								keys = {
+									-- Fix the list block map so PageDown moves down and PageUp moves up cleanly
+									["<PageDown>"] = "list_scroll_down",
+									["<PageUp>"] = "list_scroll_up",
+								},
+							},
+						},
+					},
+				},
+			}, -- Ultra-fast fuzzy finder (rg/fd)
 			terminal = { enabled = true, cmd = "/bin/bash" }, -- Quake-style togglable terminal shell
-			lazygit = { enabled = true },
 			words = { enabled = true },
+			lazygit = { enabled = true },
 			statuscolumn = { enabled = true }, -- Prettifies your left-hand line gutters!
 			-- 🚫 DISABLE ALL NON-ESSENTIAL MODULES
 			animate = { enabled = false },

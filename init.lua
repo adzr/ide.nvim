@@ -47,6 +47,28 @@ require("lazy").setup("plugins", {
 	},
 })
 
+-- Setup diagnostics
+vim.diagnostic.config({
+	-- 1. Shut off the old default flat text string at the end of the line
+	virtual_text = false,
+
+	virtual_lines = {
+		inline = true,
+		wrap = true,
+	},
+
+	-- Fine-tune options for your Rustacean/CSpell diagnostics
+	severity_sort = true,
+	signs = {
+		text = {
+			[vim.diagnostic.severity.ERROR] = "",
+			[vim.diagnostic.severity.WARN] = "󰈅",
+			[vim.diagnostic.severity.INFO] = "",
+			[vim.diagnostic.severity.HINT] = "",
+		},
+	},
+})
+
 -- These modules are not loaded by lazy
 require("core.filetype")
 -- require("core.lsp")

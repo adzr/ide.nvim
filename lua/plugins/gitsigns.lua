@@ -17,5 +17,6 @@ return { -- Adds git related signs to the gutter, as well as utilities for manag
 		},
 		-- Optional: Style the ghost text color so it looks beautifully faded
 		current_line_blame_formatter = "      <author> • <author_time:%Y-%m-%d> • <summary>",
+		word_diff = true,
 	},
 }

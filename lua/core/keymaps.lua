@@ -192,5 +192,8 @@ end, { desc = "centered float widgets" })
 -- 	require("telescope.builtin").diagnostics({ default_text = ":E:" })
 -- end, { desc = "" })
 
+-- Aerial
+keymap("n", "<leader>rt", ":AerialToggle<CR>", { desc = "toggle aerial" })
+
 -- D2
 keymap("n", "<leader>pd2", ":D2Preview", { desc = "Preview D2 file" })

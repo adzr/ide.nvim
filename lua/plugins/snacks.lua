@@ -23,7 +23,7 @@ return {
 					},
 				},
 			}, -- Ultra-fast fuzzy finder (rg/fd)
-			terminal = { enabled = true, cmd = "/bin/bash" }, -- Quake-style togglable terminal shell
+			terminal = { enabled = true, cmd = "/bin/bash" },
 			words = { enabled = true },
 			lazygit = { enabled = true },
 			statuscolumn = { enabled = true }, -- Prettifies your left-hand line gutters!

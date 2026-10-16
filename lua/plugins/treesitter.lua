@@ -25,13 +25,14 @@ return {
 					"vim",
 					"vimdoc",
 					"css",
+					"python",
 					"javascript",
 					"scss",
 					"tsx",
 					"regex",
 					"dockerfile",
 				},
-				-- Autoinstall languages that are not installed
+				-- Auto-install languages that are not installed
 				auto_install = true,
 				sync_install = false,
 				highlight = {

@@ -1,5 +1,6 @@
 return {
 	{
+		-- cspell: disable-next-line
 		"folke/snacks.nvim",
 		priority = 1000, -- Initialize at the very beginning of the startup sequence
 		lazy = false,
@@ -26,6 +27,7 @@ return {
 			terminal = { enabled = true, cmd = "/bin/bash" },
 			words = { enabled = true },
 			lazygit = { enabled = true },
+			-- cspell: disable-next-line
 			statuscolumn = { enabled = true }, -- Prettifies your left-hand line gutters!
 			-- 🚫 DISABLE ALL NON-ESSENTIAL MODULES
 			animate = { enabled = false },
@@ -37,6 +39,7 @@ return {
 			notifier = { enabled = false },
 			notify = { enabled = false },
 			profiler = { enabled = false },
+			-- cspell: disable-next-line
 			quickfile = { enabled = false },
 			scope = { enabled = false },
 			scratch = { enabled = false },

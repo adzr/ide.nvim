@@ -71,7 +71,20 @@ vim.diagnostic.config({
 
 -- These modules are not loaded by lazy
 require("core.filetype")
--- require("core.lsp")
+-- cspell: disable-next-line
+--require("lsp-config").basedpyright.setup({})
+-- cspell: disable-next-line
+vim.lsp.enable("basedpyright")
+
+vim.lsp.config("ruff", {
+	init_options = {
+		settings = {
+			-- Ruff language server settings go here
+		},
+	},
+})
+vim.lsp.enable("ruff")
+
 require("core.options")
 require("core.keymaps")
 require("core.health")

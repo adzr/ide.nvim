@@ -1,5 +1,6 @@
 return {
 	{
+		-- cspell: disable-next-line
 		"echasnovski/mini.nvim",
 		version = false, -- Track the active main branch for the latest module optimizations
 		lazy = false, -- Load immediately on startup so icons are available to all buffers
@@ -14,7 +15,9 @@ return {
 			require("mini.icons").mock_nvim_web_devicons()
 			-- 3. You can initialize your other mini modules in the same block down here:
 			require("mini.pairs").setup({})
+			-- cspell: disable-next-line
 			require("mini.indentscope").setup({ symbol = "┃" })
+			-- cspell: disable-next-line
 			require("mini.statusline").setup({ set_vim_settings = true })
 		end,
 	},

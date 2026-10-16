@@ -1,6 +1,8 @@
 return {
+	-- cspell: disable-next-line
 	"nvimtools/none-ls.nvim",
 	dependencies = {
+		-- cspell: disable-next-line
 		"davidmh/cspell.nvim",
 	},
 	event = "VeryLazy",
